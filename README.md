@@ -1,4 +1,4 @@
 # pythonprojects
-  1. Temperature Conversion Calculator
+  1. Palindrome checker
   2. Salary Calculator
-  3. Palindrome Checker
+  3. Temperature Converter
