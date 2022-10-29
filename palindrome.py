@@ -3,6 +3,7 @@ import os
 
 end = False
 
+#returns reverse of string
 def isPalindrome(s):
     return s == s[::-1]
 
@@ -24,5 +25,6 @@ while end == False:
                 print(f"{s} is a palindrome.")
             else:
                 print(f"{s} is not a palindrome.")
+        #press any key to continue        
         os.system("pause")
         time.sleep(2)
