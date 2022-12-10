@@ -1,6 +1,7 @@
 import time
 import os
 
+#while end is false, program continues to run
 end = False
 
 #returns reverse of string

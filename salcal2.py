@@ -64,3 +64,5 @@ while end == False:
         print(f"Hello, {name.title()},")
         print(f"You make ${yearlySalary:.2f} in a year.")
         print("\n******Concise Version******\n")
+        
+#OT is factored into overall yearly income, need to make separate
