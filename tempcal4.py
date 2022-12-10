@@ -1,3 +1,4 @@
+#program will continue to run until end becomes True
 end = False
 while end == False:
     quit = input("To quit this program, enter 'Q', or press any key to continue\n")
