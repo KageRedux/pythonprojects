@@ -3,3 +3,4 @@
   2. Salary Calculator - Figure out your yearly income
   3. Temperature Converter - Figure out the temperature in °C & °F
      a. Update - 1.14.23 - Added Kelvin conversion
+  4. Parity checker - checks if number is odd or even
