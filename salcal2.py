@@ -1,7 +1,7 @@
 #python salary calculator ver 2, calculates overtime as well
 
 #version Number
-print("SalCal ver 1.2")
+print("SalCal ver 1.2: Caluclate your Gross income based on your hourly rate!")
 
 #constant
 end = False
@@ -24,7 +24,7 @@ while end == False:
         hourPerWeek = float(input("Enter your hours worked in a week: "))
         hpw = hourPerWeek
 
-        #Line redundant, should be removed
+        #Line redundant, should be removed, or repurposed for something else - maybe another function
         '''dayPerWeek = float(input("Enter number of worked days in a week: "))
         dpw = dayPerWeek'''
 
@@ -39,13 +39,15 @@ while end == False:
             overtimeHour = hpw - 40
             overtimeRate = rate * 1.5
             overtimePay = overtimeHour * overtimeRate
+            yearlySalary = r * 2080
             otPrompt = input("It appears you worked some overtime. Do you want your overtime information? Y or N: ")
             if otPrompt != "Y".casefold():
                 print("\nOvertime information will not be displayed.\n")
             else:
                 print("\n******Overtime Information******\n")
                 print(f"Your overtime rate of pay is ${overtimeRate:.2f}.\n")
-                print(f"Your overtime pay is ${overtimePay:.2f}.")
+                print(f"Your overtime pay is ${overtimePay:.2f}.\n")
+                print(f"Note: This is calculated separately from your yearly salary.")
                 print("\n******Overtime Information******\n")
    
     breakdown = input("Do you want a full breakdown of your income? Y or N: ")
@@ -56,7 +58,8 @@ while end == False:
         print(f"You make ${yearlySalary:.2f} in a year.\n")
         print(f"You make ${monthlySalary:.2f} in a month.\n")
         print(f"You make ${weeklySalary:.2f} in a week.\n")
-        print(f"You make ${dailySalary:.2f} in a day.")
+        print(f"You make ${dailySalary:.2f} in a day.\n")
+        print(f"You made ${overtimePay} in overtime. To calculate total OT included into your salary, add ${overtimePay} to the yearly salary.")
         print("\n******Income Information******\n")
 
     #only show yearly income    
@@ -65,6 +68,6 @@ while end == False:
         print(f"Hello, {name.title()},")
         print(f"You make ${yearlySalary:.2f} in a year.")
         print("\n******Concise Version******\n")
-        
-#OT is factored into overall yearly income, need to make separate
-#maybe consider removing OT all together
+
+#fixed OT calculation error, might add another feature for later
+#update version number later & add gui
