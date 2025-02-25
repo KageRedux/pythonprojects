@@ -24,8 +24,9 @@ while end == False:
         hourPerWeek = float(input("Enter your hours worked in a week: "))
         hpw = hourPerWeek
 
-        dayPerWeek = float(input("Enter number of worked days in a week: "))
-        dpw = dayPerWeek
+        #Line redundant, should be removed
+        '''dayPerWeek = float(input("Enter number of worked days in a week: "))
+        dpw = dayPerWeek'''
 
         #formulas
         yearlySalary = r * hpw * 52
@@ -38,7 +39,7 @@ while end == False:
             overtimeHour = hpw - 40
             overtimeRate = rate * 1.5
             overtimePay = overtimeHour * overtimeRate
-            otPrompt = input("Do you want your overtime information? Y or N: ")
+            otPrompt = input("It appears you worked some overtime. Do you want your overtime information? Y or N: ")
             if otPrompt != "Y".casefold():
                 print("\nOvertime information will not be displayed.\n")
             else:
@@ -66,3 +67,4 @@ while end == False:
         print("\n******Concise Version******\n")
         
 #OT is factored into overall yearly income, need to make separate
+#maybe consider removing OT all together
